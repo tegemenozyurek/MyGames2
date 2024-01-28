@@ -1,0 +1,191 @@
+html{
+    background-color: #ffcf9d;
+}
+
+body{
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: #ffcf9d;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: #ffcf9d;
+}
+  
+a:hover {
+    text-decoration: line-through;
+}
+
+.title{
+    height: 5rem;
+    width: 100%;
+    background-color: #f5f5dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 3%;
+}
+
+.welcome{
+    height: 8rem;
+    width: 60%;
+    margin: 0 auto 5%;
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    border: solid black 10px;
+    border-radius: 10px;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+    margin-bottom: 20px;
+}
+
+.game{
+    width: 900px;
+    height: 600px;
+    background-color: beige;
+    border: solid black 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+    background-color: #f5f5dc;
+    float: right;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.gameReview{
+    padding: 5%;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1250px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .game{
+        width: 720px;
+        height: 480px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .gameReview{
+        padding: 1%;
+        font-size: 1.3rem;
+    }
+
+    .welcome{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .game{
+        width: 540px;
+        height: 360px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .gameReview{
+        padding: 1%;
+        font-size: 0.9rem;
+    }
+
+    .title img{
+        width: 110px;
+    }
+
+    .welcome{
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .game{
+        width: 360px;
+        height: 240px;
+    }
+
+    h1{
+        font-size: 0.75rem;
+    }
+
+    a{
+        font-size: 1rem;
+    }
+
+    .gameReview{
+        padding: 1%;
+        font-size: 0.65rem;
+    }
+
+    .title{
+        height: 4rem;
+    }
+
+    .title img{
+        width: 110px;
+    }
+
+    .welcome{
+        font-size: 1rem;
+    }
+}
